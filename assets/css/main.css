@@ -1527,7 +1527,7 @@ textarea._info {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 10;
+    z-index: 11;
   }
   .btn-create,
   .header_text {
