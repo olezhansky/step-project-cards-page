@@ -194,7 +194,7 @@ h6 {
 }
 @font-face {
   font-family: Poppins;
-  src: url(/fonts/Poppins-Medium.ttf) format("truetype");
+  src: url(../fonts/Poppins-Medium.ttf) format("truetype");
 }
 @font-face {
   font-display: block;
