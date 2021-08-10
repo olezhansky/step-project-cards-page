@@ -3,11 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="stylesheet" href="css/style.min.css" />
-    <link rel="icon" href="img/favicon.png" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="icon" href="static/favicon.png" />
     <title>CARDS</title>
+    <script defer="defer" src="assets/js/vendors.js"></script>
+    <script defer="defer" src="assets/js/main.js"></script>
+    <link href="assets/css/main.css" rel="stylesheet" />
   </head>
   <body>
     <div class="wrapper">
@@ -15,14 +16,26 @@
         <div class="container">
           <div class="header_row">
             <div class="header_logo">
-              <a class="header_logo-img" href="#">
-                <img src="img/rev-logo-6.png" alt="" />
-              </a>
+              <a class="header_logo-img" href="#"
+                ><img src="assets/img/rev-logo-6.png" alt="Logo"
+              /></a>
             </div>
-            <div class="header_text"></div>
+            <div class="header_content">
+              <div class="header_text"></div>
+              <div class="header_comment">
+                (Or click register button if you are not registered)
+              </div>
+            </div>
             <div class="header_btnBlock">
               <button class="btn btn-create">Create visit</button>
+              <a
+                target="_blank"
+                href="https://ajax.test-danit.com/front-pages/cards-register.html"
+                class="btn btn-signup"
+                >Register</a
+              >
               <button class="btn btn-enter">Login</button>
+              <button class="btn btn-logout">Logout</button>
             </div>
           </div>
         </div>
@@ -35,7 +48,6 @@
               <div class="form-group">
                 <label for="find-card-text"></label>
                 <input
-                  type="text"
                   class="find-card-text"
                   id="find-card-text"
                   name="find-card-text"
@@ -45,7 +57,9 @@
               <div class="form-group">
                 <label for="priority"></label>
                 <select class="filter-select" name="priority" id="priority">
-                  <option value="none" disabled selected>Priority</option>
+                  <option value="none" disabled="disabled" selected="selected">
+                    Priority
+                  </option>
                   <option value="Regular">Regular</option>
                   <option value="Priority">Priority</option>
                   <option value="Urgent">Urgent</option>
@@ -54,7 +68,9 @@
               <div class="form-group">
                 <label for="status"></label>
                 <select class="filter-select" name="status" id="status">
-                  <option value="none" disabled selected>Status</option>
+                  <option value="none" disabled="disabled" selected="selected">
+                    Status
+                  </option>
                   <option value="Active">Active</option>
                   <option value="Done">Done</option>
                 </select>
@@ -62,7 +78,9 @@
               <div class="form-group">
                 <label for="specialist"></label>
                 <select class="filter-select" name="specialist" id="doctorType">
-                  <option value="none" disabled selected>Specialist</option>
+                  <option value="none" disabled="disabled" selected="selected">
+                    Specialist
+                  </option>
                   <option value="Cardiologist">Cardiologist</option>
                   <option value="Dantist">Dantist</option>
                   <option value="Therapist">Therapist</option>
@@ -76,8 +94,6 @@
             </form>
           </div>
           <div class="main_text"></div>
-
-          <!-- =========CARDS================================ -->
           <div class="cards_field">
             <div class="loader-overlay">
               <div class="loader"></div>
@@ -94,24 +110,22 @@
               <a
                 href="tel: +380970000000"
                 class="icon-phone-call footer-content-item"
+                >+38-097-000-00-00</a
               >
-                +38-097-000-00-00
-              </a>
             </div>
             <div class="footer-content-block">
               <h2 class="footer-head">Technical support</h2>
               <a
                 href="mailto:email-example@gmail.com"
                 class="icon-at-sign footer-content-item"
+                >email-example@gmail.com</a
               >
-                email-example@gmail.com
-              </a>
             </div>
             <div class="footer-content-block">
               <h2 class="footer-head">Instructions for use</h2>
-              <a href="" class="icon-calendar1 footer-content-item manual-link">
-                Manual
-              </a>
+              <a href="" class="icon-calendar1 footer-content-item manual-link"
+                >Manual</a
+              >
             </div>
           </div>
           <div class="footer-rights-declaration">
@@ -120,7 +134,5 @@
         </div>
       </footer>
     </div>
-
-    <script src="js/bundle.js"></script>
   </body>
 </html>
