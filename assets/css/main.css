@@ -194,16 +194,16 @@ h6 {
 }
 @font-face {
   font-family: Poppins;
-  src: url(/assets/fonts/Poppins-Medium.ttf) format("truetype");
+  src: url(/fonts/Poppins-Medium.ttf) format("truetype");
 }
 @font-face {
   font-display: block;
   font-family: icomoon_my_new_set;
   font-style: normal;
   font-weight: 400;
-  src: url(/assets/fonts/icomoon_my_new_set.eot);
-  src: url(/assets/fonts/icomoon_my_new_set.ttf) format("truetype"),
-    url(/assets/fonts/icomoon_my_new_set.woff) format("woff");
+  src: url(../fonts/icomoon_my_new_set.eot);
+  src: url(../fonts/icomoon_my_new_set.ttf) format("truetype"),
+    url(../fonts/icomoon_my_new_set.woff) format("woff");
 }
 .wrapper,
 body.no-scroll {
