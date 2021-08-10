@@ -465,7 +465,7 @@ body.no-scroll {
   position: relative;
 }
 .btn-reset-serch-form:after {
-  background-image: url(/assets/img/reset.png);
+  background-image: url(../img/reset.png);
   background-size: contain;
   content: "";
   height: 30px;
